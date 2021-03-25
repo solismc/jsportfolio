@@ -15,6 +15,10 @@ body {
   background-color: #86BBD8;
 }
 
+.card {
+  /*background-color: #86BBD8;
+  border: none;*/
+}
 .App {
   text-align: center;
   padding-left: 20px;
