@@ -11,6 +11,9 @@ body {
   background-color: #86BBD8;
   min-height: 100%;
 }
+.container-fluid {
+  background-color: #86BBD8;
+}
 
 .App {
   text-align: center;
