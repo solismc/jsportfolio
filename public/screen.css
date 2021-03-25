@@ -47,7 +47,9 @@ body {
   list-style: none;
   height: 10vh;
   margin-top: 0px;
-  width: 100%;
+  width: 100vw;
+  font-size: x-large;
+  padding-left: 3vw;
 }
 
 .navbar.navbar-expand-sm.bg-light {
