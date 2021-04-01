@@ -2,5 +2,6 @@
     "cSpell.words": [
         "PSPO",
         "headshot"
-    ]
+    ],
+    "beautify.config": "string|Object.<string,string|number|boolean>"
 }
