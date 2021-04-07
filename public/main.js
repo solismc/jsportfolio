@@ -61,3 +61,52 @@ function readMoreThree() {
     moreText.style.display = "inline";
   }
 }
+
+function readMoreOneProject() {
+  let dots = document.getElementById("dotsItemOneProject");
+  let moreText = document.getElementById("moreItemOneProject");
+  let btnText = document.getElementById("myBtnOneProject");
+
+  if(dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read More";
+    moreText.style.display = "none";
+  }
+  else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read Less";
+    moreText.style.display = "inline";
+  }
+}
+function readMoreTwoProject() {
+  let dots = document.getElementById("dotsItemTwoProject");
+  let moreText = document.getElementById("moreItemTwoProject");
+  let btnText = document.getElementById("myBtnOneProject");
+
+  if(dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read More";
+    moreText.style.display = "none";
+  }
+  else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read Less";
+    moreText.style.display = "inline";
+  }
+}
+function readMoreThreeProject() {
+  let dots = document.getElementById("dotsItemThreeProject");
+  let moreText = document.getElementById("moreItemThreeProject");
+  let btnText = document.getElementById("myBtnThreeProject");
+
+  if(dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read More";
+    moreText.style.display = "none";
+  }
+  else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read Less";
+    moreText.style.display = "inline";
+  }
+}
