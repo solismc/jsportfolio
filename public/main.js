@@ -9,8 +9,10 @@ function loop (i) {
     loop(i + 1)
     description.addClass('rotate-text')
   }, 3000) // This duration must match the length of the animation
-  loop(0)
+  
 }
+
+loop(0)
 
 function readMoreOne() {
   let dots = document.getElementById("dotsItemOne");
@@ -81,7 +83,7 @@ function readMoreOneProject() {
 function readMoreTwoProject() {
   let dots = document.getElementById("dotsItemTwoProject");
   let moreText = document.getElementById("moreItemTwoProject");
-  let btnText = document.getElementById("myBtnOneProject");
+  let btnText = document.getElementById("myBtnTwoProject");
 
   if(dots.style.display === "none") {
     dots.style.display = "inline";
