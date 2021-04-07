@@ -263,10 +263,10 @@ p
   }*/
     
 .rotate-text {
-    -webkit-animation: rotate-text 3000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
-    -moz-animation: rotate-text 3000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
-    -o-animation: rotate-text 3000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
-    animation: rotate-text 3000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
+    -webkit-animation: rotate-text 2000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
+    -moz-animation: rotate-text 2000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
+    -o-animation: rotate-text 2000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
+    animation: rotate-text 2000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
   }
 
 @keyframes App-logo-spin {

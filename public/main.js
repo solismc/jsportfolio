@@ -8,7 +8,7 @@ function loop (i) {
   setTimeout(function () {
     loop(i + 1)
     description.addClass('rotate-text')
-  }, 3000) // This duration must match the length of the animation
+  }, 2000) // This duration must match the length of the animation
   
 }
 
