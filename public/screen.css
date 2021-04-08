@@ -223,14 +223,16 @@ body {
 
   .section-header-react {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
+    flex-direction: row;
     align-items: center;
     background-color: #2F4858;
-    width: 100vw;
+    width: 104vw;
     height: 15vh;
     color: white;
     font-size: 16px;
+    padding-left: 25vw;
+    padding-right: 25vw;
     }
 
     .section-header-react-content {
@@ -241,7 +243,7 @@ body {
       /*padding: 0em 2em 0em 2em;*/
     }
 
-  /*@-webkit-keyframes rotate-text {
+  /*@-webkit-keyframes {rotate-text} {
     0%
         opacity: 0;
 
@@ -267,6 +269,41 @@ p
     -moz-animation: rotate-text 2000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
     -o-animation: rotate-text 2000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
     animation: rotate-text 2000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-github {
+    background: black;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
   }
 
 @keyframes App-logo-spin {
