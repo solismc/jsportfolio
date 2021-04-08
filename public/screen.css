@@ -272,11 +272,11 @@ p
   }
 
   .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+    padding: 30px;
+    font-size: large;
     text-align: center;
     text-decoration: none;
+    border-radius: 10%;
   }
   
   /* Add a hover effect if you want */
