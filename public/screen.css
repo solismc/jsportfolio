@@ -231,8 +231,8 @@ body {
     height: 15vh;
     color: white;
     font-size: 16px;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 40vw;
+    padding-right: 40vw;
     }
 
     .section-header-react-content {
@@ -276,7 +276,7 @@ p
     font-size: xx-large !important;
     text-align: center;
     text-decoration: none;
-    border-radius: 13%;
+    border-radius: 20%;
   }
   
   /* Add a hover effect if you want */
