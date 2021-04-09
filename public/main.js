@@ -23,7 +23,7 @@ var typewriter = new Typewriter(app, {
 typewriter.typeString('Project Manager')
     .pauseFor(3500)
     .deleteAll()
-    .typeString('Marketing Strategy')
+    .typeString('Marketing Strategist')
     .pauseFor(3500)
     .deleteAll()
     .typeString('Software Developer')
