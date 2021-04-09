@@ -78,7 +78,7 @@ body {
   line-height: 5;
   vertical-align: middle;
   border-radius: 50%;
-  margin-left: 35%;
+  margin-left: 39%;
 }
 
 .section-header {
@@ -140,6 +140,7 @@ body {
   padding-bottom: 30px;
   padding-top: 30px;
 }
+
 .rotate-text {
   display: flex;
   justify-content: center;
@@ -148,7 +149,12 @@ body {
   background-color: #86BBD8;
   width: 100%;
   padding-bottom: 34px;
+}
 
+.title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .body-projects {
@@ -156,6 +162,78 @@ body {
   padding-right: 70px;
   padding-left: 24px;
   height: fit-content;
+}
+
+.cust-quotes {
+  width: 840px;
+  height:100px;
+  position:relative;
+}
+
+.cust-quotes blockquote {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.5s ease-out 0s, transform 0.5s ease-in 0s;
+}
+
+/* IE < 10 fallback */
+.no-csstransitions .cust-quotes blockquote,
+.no-csstransforms .cust-quotes blockquote {
+   position:relative;
+}
+
+.cust-quotes blockquote:first-child {
+    opacity: 0;
+    transform: translateY(-10px) scale(1.1);
+}
+.cust-quotes blockquote:first-child + blockquote {
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 1.6s ease 0s;
+}
+.cust-quotes blockquote p{
+  font-size:24px;
+  font-weight:normal;
+  font-style:italic;
+  color:#353535;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.cust-quotes blockquote p:before {
+   content: '\201C';
+}
+.cust-quotes blockquote p:after {
+   content: '\201D';
+}
+.cust-quotes blockquote cite {
+    text-align: center;
+    font-size: 14px;
+    color: #898989;
+}
+.cust-quotes blockquote cite a {
+  font-size:14px;
+  font-weight:normal;
+}
+
+
+
+.container {
+  
+max-width:940px;
+margin:0 auto;  
+
+}
+
+#testimonials {
+  margin:0 auto;
+  width:940px;
+
 }
 
 .quote {
@@ -265,10 +343,10 @@ p
   }*/
     
 .rotate-text {
-    -webkit-animation: rotate-text 2000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
-    -moz-animation: rotate-text 2000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
-    -o-animation: rotate-text 2000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
-    animation: rotate-text 2000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
+    -webkit-animation: rotate-text 5000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
+    -moz-animation: rotate-text 5000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
+    -o-animation: rotate-text 5000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
+    animation: rotate-text 5000ms cubic-bezier(0.645,  0.045, 0.355, 1.000) infinite;
   }
 
   .fa {

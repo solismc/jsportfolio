@@ -8,11 +8,51 @@ function loop (i) {
   setTimeout(function () {
     loop(i + 1)
     description.addClass('rotate-text')
-  }, 2000) // This duration must match the length of the animation
+  }, 5000) // This duration must match the length of the animation
   
 }
 
 loop(0)
+
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Project Manager')
+    .pauseFor(3500)
+    .deleteAll()
+    .typeString('Marketing Strategy')
+    .pauseFor(3500)
+    .deleteAll()
+    .typeString('Software Developer')
+    .pauseFor(3500)
+    .start();
+
+function initQuoteCarousel() {
+
+  var $quotesWrapper = $(".cust-quotes");
+  var $quotes = $quotesWrapper.find("blockquote");
+
+  if (!$quotes.length) {
+      return;
+  }
+
+  var selectNextQuote = function () {
+      // keep move first quote in dom to the end to make continous
+      var $quote = $quotesWrapper.find("blockquote:first").detach().appendTo($quotesWrapper);
+
+      setTimeout(selectNextQuote, $quote.data("timeout"));
+  };
+
+  setTimeout(selectNextQuote, $quotes.filter(":first").data("timeout"));
+
+}
+
+$(function () {
+  initQuoteCarousel();
+});
 
 function readMoreOne() {
   let dots = document.getElementById("dotsItemOne");
