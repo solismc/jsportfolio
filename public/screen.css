@@ -125,8 +125,8 @@ body {
   padding-left: 60px;
   padding-right: 60px;
   border-color: #2F4858;
-  padding-bottom: 70px;
-  padding-top: 70px;
+  padding-bottom: 50px;
+  padding-top: 100px;
 }
 
 .hero-unit-projects {
@@ -385,6 +385,17 @@ p
 .fa-youtube {
   background: #bb0000;
   color: white;
+}
+
+.contact-form {
+  width: 55vw;
+  height: 77vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /*padding-top: 50px;*/
+  padding: 40px;
 }
 
 @keyframes App-logo-spin {

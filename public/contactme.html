@@ -1,44 +1,108 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" />
-    <title>Jsportfolio</title>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/screen.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </head>
-  
-  <body>
-    <div className="App">
-      <nav class="navbar navbar-expand-sm bg-light">
-        <ul class="nav nav-pills">
-          <li class=nav-item>
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class=nav-item>
-            <a class="nav-link" href="brand.html">Branding &<br>&nbspMarketing</a>
-          </li>
-          <li class=nav-item>
-            <a class="nav-link" href="projects.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspProject<br>Management</a>
-          </li>
-          <li class="nav-item justify content">
-            <a class="nav-link" href="code.html">&nbsp&nbsp&nbsp&nbspSoftware<br>Development</a>
-          </li>
-          <li class=nav-item>
-            <a class="nav-link" href="aboutme.html">About<br>&nbsp&nbsp&nbspMe</a>
-          </li>
-          <li class=nav-item>
-            <a class="nav-link" href="contactme.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
 
-    <section class=container-fluid>
-      <h1>Contact</h1>
+<head lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" />
+  <title>Jsportfolio</title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/screen.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div className="App">
+    <nav class="navbar navbar-expand-sm bg-light">
+      <ul class="nav nav-pills">
+        <li class=nav-item>
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class=nav-item>
+          <a class="nav-link" href="brand.html">Branding &<br>&nbspMarketing</a>
+        </li>
+        <li class=nav-item>
+          <a class="nav-link" href="projects.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspProject<br>Management</a>
+        </li>
+        <li class="nav-item justify content">
+          <a class="nav-link" href="code.html">&nbsp&nbsp&nbsp&nbspSoftware<br>Development</a>
+        </li>
+        <li class=nav-item>
+          <a class="nav-link" href="aboutme.html">About<br>&nbsp&nbsp&nbspMe</a>
+        </li>
+        <li class=nav-item>
+          <a class="nav-link" href="contactme.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="contact-form">
+      <form class="row g-2 needs-validation" novalidate>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltip02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+          <div class="valid-tooltip">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4 position-relative">
+          <label for="validationTooltipUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+            <input type="text" class="form-control" id="validationTooltipUsername"
+              aria-describedby="validationTooltipUsernamePrepend" required>
+            <div class="invalid-tooltip">
+              Please choose a unique and valid username.
+            </div>
+          </div>
+          <h1></h1>
+        </div>
+        <div class="col-md-6 position-relative">
+          <label for="validationTooltip03" class="form-label">City</label>
+          <input type="text" class="form-control" id="validationTooltip03" required>
+          <div class="invalid-tooltip">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip04" class="form-label">State</label>
+          <select class="form-select" id="validationTooltip04" required>
+            <option selected disabled value="">Choose...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-tooltip">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-3 position-relative">
+          <label for="validationTooltip05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationTooltip05" required>
+          <div class="invalid-tooltip">
+            Please provide a valid zip.
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
     </section>
-
-  </body>
+    <section class="container-fluid">
+      <section class="row justify-content-evenly">
+        <section class="section-header-react">
+          <a href="https://www.linkedin.com/in/manuelcsolis" target="_blank" class="fa fa-linkedin"></a>
+          <a href="https://github.com/solismc" target="_blank" class="fa fa-github"></a>
+          <a href="https://twitter.com/solismc" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/channel/UCBaowGmMxGKcfVlrG9PFh6Q" target="_blank" class="fa fa-youtube"></a>
+        </section>
+      </section>
+    </section>
+</body>
