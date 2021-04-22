@@ -387,6 +387,16 @@ p
   color: white;
 }
 
+.software-page-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  height: 51vh;
+  margin: auto;
+  margin: auto;
+}
+
 .contact-form {
   width: 55vw;
   height: 77vh;
