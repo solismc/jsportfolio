@@ -396,6 +396,15 @@ p
   margin: auto;
   margin: auto;
 }
+
+.container-fluid--code-cards {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: space-between;
+  width: fit-content;
+}
+
 .code-card {
   height: 45vh;
   width: auto;
